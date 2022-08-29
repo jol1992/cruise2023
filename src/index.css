@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: "TikiTropicBold";
+  src: local("TikiTropicBold"),
+   url("./assets/TikiTropicBold-5zZZ.ttf") format("truetype");
+  font-weight: bold;
+  }
