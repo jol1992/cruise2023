@@ -23,7 +23,8 @@ export const People = () => {
     gap: 3em;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 45em;
+    margin-left: 40px;
+    margin: 2rem 8rem;
     padding: 1em;
     align-self: center;
   `;
