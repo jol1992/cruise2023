@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Container = styled.div`
   color: #ff5267;
   font-weight: 800;
-  font-size: clamp(0.05em, 0.05em + 3vw, 1.4em);
+  font-size: clamp(1.2rem, 0.05rem + 3vw, 1.4rem);
   align-self: center;
 `;
 export const CountdownTimer = () => {

@@ -53,9 +53,13 @@ const RightColumn = styled.div`
   box-shadow: 10px 20px 20px #3d4648;
   width: clamp(5em, 5em + 30vw, 24em);
   padding: 20px;
+  @media (max-width: 768px) {
+    min-width: 90%;
+    font-size: 8px;
+  }
   p {
     color: #528070;
-    font-size: clamp(0.5em, 0.5em + 10vw, 3em);
+    font-size: clamp(0.5rem, 0.5em + 10vw, 3em);
     font-weight: 300;
     margin-bottom: 2rem;
   }

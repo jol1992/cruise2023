@@ -1,22 +1,24 @@
 import React from "react";
 import styled from "styled-components";
-
-const YoutubeContainer = styled.div`
-  // display: inline-block;
-`;
+import { VideoTips } from "./Components/VideoTips";
+import cat from "./images/cat.png";
+import lexia from "./images/lexia.jpg";
+import monique from "./images/monique.jpg";
+import gloria from "./images/Gloria.jpg";
+import { AlternatingColorText } from "./Header/Header";
+import { HeaderText } from "./Components/Header";
 
 const FunContainer = styled.div`
   background-color: #c9fce9;
   position: relative;
-  padding: 2em;
+  padding: 5px;
+  // margin: auto;
+  // padding-bottom: 8em;
 
-  padding-bottom: 8em;
   @media (max-width: 768px) {
     flex-direction: column;
 
     #youtube {
-      display: inline-block;
-      margin-top: 1em;
       iframe {
         width: 100%;
       }
@@ -24,7 +26,7 @@ const FunContainer = styled.div`
   }
   div {
     flex: 1;
-    font-size: 4em;
+    // font-size: 4em;
     color: #528070;
   }
   iframe {
@@ -34,45 +36,79 @@ const FunContainer = styled.div`
     border: solid white 5px;
   }
 `;
+
+const Row = styled.div`
+  display: flex;
+  width: 100%;
+  color: #528070;
+  gap: 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  #videoDiv {
+    flex: 1;
+  }
+  div > iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+  }
+`;
 export const FunSection = () => {
   return (
     <div
       style={{
         backgroundColor: "#c9fce9",
-        display: "flex",
-        justifyContent: "center",
+        zIndex: "1",
       }}
     >
-      <FunContainer>
-        {/* <div>
-          <span style={{ fontWeight: 100, fontFamily: "TikiTropicBold" }}>
-            y'all better be
-          </span>{" "}
-        </div> */}
-
-        <YoutubeContainer>
-          <div id="youtube" style={{ display: "inline-block", margin: "auto" }}>
-            <iframe
-              src="https://www.youtube.com/embed/5COjJdjmvLI"
-              title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            />
+      <div style={{ marginTop: "2rem", marginBottom: "2rem" }}>
+        <HeaderText>
+          <AlternatingColorText text="Cruising Tips" />
+        </HeaderText>
+      </div>
+      <div
+        style={{
+          backgroundColor: "#c9fce9",
+          display: "flex",
+          flexDirection: "column",
+          //   padding: "2em",
+          paddingBottom: "8em",
+          justifyContent: "center",
+          gap: "2rem",
+        }}
+      >
+        <FunContainer>
+          <div>
+            <div id="youtube">
+              <iframe
+                src="https://www.youtube.com/embed/5COjJdjmvLI"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              />
+            </div>
           </div>
-          {/* <span
-            style={{
-              fontWeight: 500,
-              transform: "rotate(90deg)",
-              transformOrigin: "0 0",
-              position: "absolute",
-              right: "-5em",
-              top: "40%",
-              fontFamily: "TikiTropicBold",
-            }}
-          >
-            READY
-          </span> */}
-        </YoutubeContainer>
-      </FunContainer>
+        </FunContainer>
+        <Row>
+          <VideoTips
+            image={monique}
+            name="Monique"
+            video="https://www.youtube.com/embed/vC4QkkkQuxQ?control=0"
+          />
+          <VideoTips
+            image={lexia}
+            name="Lexia"
+            video="https://www.youtube.com/embed/jDXhhEsXdXs"
+          />
+          <VideoTips
+            image={gloria}
+            name="Gloria"
+            video="https://www.youtube.com/embed/5COjJdjmvLI"
+          />
+        </Row>
+      </div>
     </div>
   );
 };
