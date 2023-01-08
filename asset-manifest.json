@@ -1,12 +1,11 @@
 {
   "files": {
-    "main.css": "/cruise2023/static/css/main.48d8608b.css",
-    "main.js": "/cruise2023/static/js/main.8c8df20e.js",
+    "main.css": "/cruise2023/static/css/main.9e3b6650.css",
+    "main.js": "/cruise2023/static/js/main.d54a9611.js",
     "static/js/787.32c50ec3.chunk.js": "/cruise2023/static/js/787.32c50ec3.chunk.js",
     "static/media/bianca.jpg": "/cruise2023/static/media/bianca.550871e9a6d33a52a69f.jpg",
     "static/media/Rere.jpg": "/cruise2023/static/media/Rere.a910f6c2d9e8a40690c5.jpg",
     "static/media/paradise.jpg": "/cruise2023/static/media/paradise.e8a38af3291ec0bd365a.jpg",
-    "static/media/andrew.jpg": "/cruise2023/static/media/andrew.7984e10ae5914bf22540.jpg",
     "static/media/justin.jpg": "/cruise2023/static/media/justin.e7cacf8a2a6d022755ca.jpg",
     "static/media/monique.jpg": "/cruise2023/static/media/monique.c09341f8cb6dfdb5ccf6.jpg",
     "static/media/maurece.jpg": "/cruise2023/static/media/maurece.7875235e582d47da82ab.jpg",
@@ -15,20 +14,19 @@
     "static/media/background.png": "/cruise2023/static/media/background.4dd68ea3723d4a1df01c.png",
     "static/media/carnival-logo.png": "/cruise2023/static/media/carnival-logo.9e5ff8e1ec5185ab10d1.png",
     "static/media/lexia.jpg": "/cruise2023/static/media/lexia.03736c79084a4bcf4c07.jpg",
-    "static/media/Nicole.jpg": "/cruise2023/static/media/Nicole.cd45281b0f8693ac8025.jpg",
     "static/media/Amari.jpg": "/cruise2023/static/media/Amari.4808fa11f21ee03e339b.jpg",
     "static/media/wilma.jpg": "/cruise2023/static/media/wilma.4a1564631465ac05761f.jpg",
     "static/media/monty.jpg": "/cruise2023/static/media/monty.56cf6c6d861b334e22a3.jpg",
-    "static/media/beachball.gif": "/cruise2023/static/media/beachball.c92cc4a2d3aa6d04515f.gif",
     "static/media/jamvisions.svg": "/cruise2023/static/media/jamvisions.ab2949ed365c648f8f15bfd7d8ef354c.svg",
-    "static/media/wave.svg": "/cruise2023/static/media/wave.4c2bb05747a8e20cc526ce349feac09c.svg",
+    "static/media/star.png": "/cruise2023/static/media/star.c5f087fefef22c2e80ab.png",
+    "static/media/wave.svg": "/cruise2023/static/media/wave.acd72668e4fdb0cc9a2a35db08a4eb82.svg",
     "index.html": "/cruise2023/index.html",
-    "main.48d8608b.css.map": "/cruise2023/static/css/main.48d8608b.css.map",
-    "main.8c8df20e.js.map": "/cruise2023/static/js/main.8c8df20e.js.map",
+    "main.9e3b6650.css.map": "/cruise2023/static/css/main.9e3b6650.css.map",
+    "main.d54a9611.js.map": "/cruise2023/static/js/main.d54a9611.js.map",
     "787.32c50ec3.chunk.js.map": "/cruise2023/static/js/787.32c50ec3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.48d8608b.css",
-    "static/js/main.8c8df20e.js"
+    "static/css/main.9e3b6650.css",
+    "static/js/main.d54a9611.js"
   ]
 }
