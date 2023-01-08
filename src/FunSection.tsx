@@ -17,6 +17,7 @@ const FunContainer = styled.div`
 
   @media (max-width: 768px) {
     flex-direction: column;
+    padding: 0;
 
     #youtube {
       iframe {
@@ -32,6 +33,9 @@ const FunContainer = styled.div`
   iframe {
     aspect-ratio: 16/9;
     width: clamp(2em, 2em + 40vw, 100vw);
+    @media (max-width: 768px) {
+      width: 100%;
+    }
     justify-self: center;
     border: solid white 5px;
   }
@@ -56,6 +60,14 @@ const Row = styled.div`
     aspect-ratio: 16/9;
   }
 `;
+
+const NoProb = styled.div`
+  color: white;
+  -webkit-text-stroke-color: #528070;
+  @media (max-width: 768px) {
+    -webkit-text-stroke-width: 2px;
+  }
+`;
 export const FunSection = () => {
   return (
     <div
@@ -64,9 +76,10 @@ export const FunSection = () => {
         zIndex: "1",
       }}
     >
-      <div style={{ marginTop: "2rem", marginBottom: "2rem" }}>
-        <HeaderText>
-          <AlternatingColorText text="Cruising Tips" />
+      <div style={{ marginTop: "4rem", marginBottom: "4rem" }}>
+        <HeaderText size="1">
+          <AlternatingColorText text="First Time?" />
+          <NoProb>No Problem</NoProb>
         </HeaderText>
       </div>
       <div

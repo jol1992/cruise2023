@@ -20,13 +20,17 @@ import styled from "styled-components";
 export const People = () => {
   const PeopleContainer = styled.div`
     display: flex;
-    gap: 3em;
+    gap: 1em;
     flex-wrap: wrap;
     justify-content: center;
     margin-left: 40px;
     margin: 2rem 8rem;
     padding: 1em;
     align-self: center;
+    @media (max-width: 768px) {
+      margin: 2rem 0;
+      padding: 0;
+    }
   `;
   const personObject: PersonProps[] = [
     { name: "Justin", image: justin },

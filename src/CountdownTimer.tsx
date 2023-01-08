@@ -6,6 +6,7 @@ const Container = styled.div`
   font-weight: 800;
   font-size: clamp(1.2rem, 0.05rem + 3vw, 1.4rem);
   align-self: center;
+  text-align: center;
 `;
 export const CountdownTimer = () => {
   const countDownDate = new Date("June 8 2023").getDate();

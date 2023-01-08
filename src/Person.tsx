@@ -14,11 +14,11 @@ const PersonContainer = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
-  font-size: clamp(1em, 1em + 5vw, 2em);
+  font-size: clamp(1rem, 1rem + 5vw, 2rem);
   border-radius: 10px;
   img {
-    width: clamp(100px, 100px + 10vw, 200px);
-    height: clamp(100px, 100px + 10vw, 200px);
+    width: clamp(75px, 75px + 10vw, 200px);
+    height: clamp(75px, 75px + 10vw, 200px);
     object-fit: cover;
     border-radius: 10px;
   }

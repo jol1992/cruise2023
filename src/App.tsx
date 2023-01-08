@@ -31,11 +31,24 @@ const StaringContainer = styled.div`
   font-family: "TikiTropicBold";
   color: white;
   #label {
-    margin-left: calc(4rem + 30px);
+    margin-left: calc(2rem + 30px);
     margin-top: 30px;
-    font-size: 4rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
     transform-origin: 0 0;
     transform: rotate(90deg);
+    position: sticky;
+    top: 30%;
+    @media (max-width: 768px) {
+      transform: rotate(0deg);
+      margin-left: 0;
+      top: 0;
+      z-index: 2;
+      text-align: center;
+      background-color: #528070f5;
+      margin-top: 0;
+      padding: 30px;
+    }
   }
 `;
 
@@ -47,12 +60,7 @@ const App = () => {
         <Header />
 
         <StaringContainer>
-          <div
-            id="label"
-            style={{ position: "sticky", top: "30%", marginTop: "2rem" }}
-          >
-            Starring
-          </div>
+          <div id="label">Starring</div>
           <People />
         </StaringContainer>
 

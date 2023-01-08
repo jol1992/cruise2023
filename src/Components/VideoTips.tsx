@@ -21,6 +21,11 @@ const Image = styled.div<{ img: string }>`
     display: none;
   }
 `;
+
+const Video = styled.div`
+  margin-left: 25px;
+  margin-right: 30px;
+`;
 export const VideoTips: FC<{ video: string; image: string; name: string }> = ({
   name,
   image,
@@ -32,14 +37,14 @@ export const VideoTips: FC<{ video: string; image: string; name: string }> = ({
         <Image img={image} />
         <div>{name}'s tips</div>
       </Title>
-      <div>
+      <Video>
         <iframe
           style={{ border: "solid white 5px" }}
           src={video}
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         />
-      </div>
+      </Video>
     </div>
   );
 };
