@@ -18,3 +18,9 @@ code {
    url("./assets/TikiTropicBold-5zZZ.ttf") format("truetype");
   font-weight: bold;
   }
+
+  @font-face {
+    font-family: 'Inspiration';
+    src: url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap')
+  }
+

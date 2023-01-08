@@ -17,7 +17,7 @@ export const HeaderText = styled.div<{ size?: string; mt?: string }>`
   }
 
   color: #528070;
-  font-family: "TikiTropicBold";
+  font-family: TikiTropicBold;
 `;
 
 const HeaderContent = styled.div`
@@ -50,7 +50,7 @@ const TitleContainer = styled.div`
 `;
 
 const HeaderContainer = styled.div`
-  background-color: #c9fce9;
+  background-color: #0da49bff;
   padding: 8em;
   font-size: 1em;
 

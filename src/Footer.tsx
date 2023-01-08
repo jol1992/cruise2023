@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const FooterContainer = styled.div`
-  background-color: #c9fce9;
+  background-color: #0da49bff;
   padding: 2em;
 `;
 export const Footer = () => {

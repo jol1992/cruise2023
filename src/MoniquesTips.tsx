@@ -23,7 +23,7 @@ const MoniquesTipsContainer = styled.div`
   header {
     font-size: 4em;
     align-self: center;
-    color: #c9fce9;
+    color: #0da49bff;
   }
 `;
 const animateBall = keyframes`
@@ -48,7 +48,7 @@ const RightColumn = styled.div`
   position: relative;
   margin-left: auto;
 
-  background-color: #c9fce9;
+  background-color: #0da49bff;
   border-radius: 10px;
   box-shadow: 10px 20px 20px #3d4648;
   width: clamp(5em, 5em + 30vw, 24em);

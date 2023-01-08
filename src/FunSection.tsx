@@ -9,7 +9,7 @@ import { AlternatingColorText } from "./Header/Header";
 import { HeaderText } from "./Components/Header";
 
 const FunContainer = styled.div`
-  background-color: #c9fce9;
+  background-color: #0da49bff;
   position: relative;
   padding: 5px;
   // margin: auto;
@@ -72,7 +72,7 @@ export const FunSection = () => {
   return (
     <div
       style={{
-        backgroundColor: "#c9fce9",
+        backgroundColor: "#0DA49Bff",
         zIndex: "1",
       }}
     >
@@ -84,7 +84,7 @@ export const FunSection = () => {
       </div>
       <div
         style={{
-          backgroundColor: "#c9fce9",
+          backgroundColor: "#0DA49Bff",
           display: "flex",
           flexDirection: "column",
           //   padding: "2em",
