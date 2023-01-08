@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
+import { HeaderText } from "./Components/Header";
+import { CountdownTimer } from "./CountdownTimer";
+import { AlternatingColorText } from "./Header/Header";
 import paradise from "./images/paradise.jpg";
 
 const VideoContainer = styled.div`
@@ -35,7 +38,7 @@ const VideoContainer = styled.div`
   //   div {
   //     flex: 1;
   //     font-size: 4em;
-  //     color: #528070;
+  //     color: #9DC6E7ff;
   //   }
   iframe {
     // aspect-ratio: 16/9;
@@ -58,10 +61,30 @@ const GetReadyContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 23.5vw;
-  color: black;
+  font-size: 5rem;
+  color: #334b49;
   text-align: center;
-  font-family: "Inspiration";
+
+  #content {
+    font-family: "Inspiration";
+  }
+`;
+
+const TitleContainer = styled.div`
+  background-color: #ffffffd4;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: #2f5060 20px 20px 20px;
+  border-radius: 10px;
+  max-width: 700px;
+  margin: auto;
+  margin-top: 4rem;
+  align-items: center;
+  position: relative;
+  font-size: clamp(3.2rem, 1.2rem + 10vw, 4rem);
+  gap: 1rem;
 `;
 
 export const LoopingVideo = () => {
@@ -108,8 +131,42 @@ export const LoopingVideo = () => {
 
         <GetReadyContainer>
           <div style={{ position: "absolute", top: "40px" }}>
-            Carnival Valor
-            <br /> 2023
+            <div id="content" style={{ position: "relative", zIndex: "1" }}>
+              <div>Carnival Valor</div>
+
+              <div style={{ position: "relative", top: "-20px" }}>2023</div>
+            </div>
+            <div
+              style={{
+                fontSize: "1.5rem",
+                color: "white",
+                position: "relative",
+                top: "-8.3rem",
+                zIndex: "0",
+              }}
+            >
+              New Orleans
+            </div>
+            <TitleContainer>
+              <HeaderText size="4">
+                <div
+                  style={{
+                    display: "inline-block",
+                    marginLeft: "auto",
+                    marginRight: "auto",
+                    textAlign: "center",
+                  }}
+                >
+                  <AlternatingColorText text="Crusin'" />
+                  {/* <span>23</span> */}
+                </div>
+              </HeaderText>
+              <div style={{ fontSize: "20px" }}>
+                Thurs <strong>June 8, 2023</strong> - <br />
+                Sun <strong>June 12, 2023</strong>{" "}
+              </div>
+              <CountdownTimer />
+            </TitleContainer>
           </div>
         </GetReadyContainer>
       </div>

@@ -45,7 +45,7 @@ const Row = styled.div`
   display: flex;
   width: 100%;
   color: white;
-  gap: 2rem;
+  gap: 4rem;
   font-size: 1rem;
   font-weight: 600;
   @media (max-width: 768px) {
@@ -63,7 +63,7 @@ const Row = styled.div`
 
 const NoProb = styled.div`
   color: white;
-  -webkit-text-stroke-color: #528070;
+  -webkit-text-stroke-color: #9dc6e7ff;
   @media (max-width: 768px) {
     -webkit-text-stroke-width: 2px;
   }
@@ -76,9 +76,10 @@ export const FunSection = () => {
         zIndex: "1",
       }}
     >
-      <div style={{ marginTop: "4rem", marginBottom: "4rem" }}>
+      <div style={{ marginTop: "4rem", marginBottom: "6rem" }}>
         <HeaderText size="1">
-          <AlternatingColorText text="First Time?" />
+          First Time?
+          {/* <AlternatingColorText text="First Time?" /> */}
           <NoProb>No Problem</NoProb>
         </HeaderText>
       </div>
@@ -90,7 +91,7 @@ export const FunSection = () => {
           //   padding: "2em",
           paddingBottom: "8em",
           justifyContent: "center",
-          gap: "2rem",
+          gap: "8rem",
         }}
       >
         <FunContainer>
@@ -118,7 +119,7 @@ export const FunSection = () => {
           <VideoTips
             image={gloria}
             name="Gloria"
-            video="https://www.youtube.com/embed/5COjJdjmvLI"
+            video="https://www.youtube.com/embed/sDO_mnH14HE"
           />
         </Row>
       </div>

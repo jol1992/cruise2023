@@ -8,15 +8,15 @@ import jamvisions from "../images/jamvisions.svg";
 
 export const HeaderText = styled.div<{ size?: string; mt?: string }>`
   font-size: clamp(
-    3.2em,
-    1.2em + 10vw,
-    ${({ size }) => (size ? `${size}em` : "7em")}
+    3.2rem,
+    1.2rem + 10vw,
+    ${({ size }) => (size ? `${size}rem` : "7rem")}
   );
   @media (max-width: 768px) {
     text-align: center;
   }
 
-  color: #528070;
+  color: #334b49;
   font-family: TikiTropicBold;
 `;
 
@@ -96,7 +96,7 @@ export const Header = () => {
           The trip you'll <WhiteContainer>NEVER</WhiteContainer> forget
         </HeaderText>
 
-        <TitleContainer>
+        {/* <TitleContainer>
           <HeaderText size="4">
             <div
               style={{
@@ -112,7 +112,7 @@ export const Header = () => {
           </HeaderText>
           <>June 8, 2023</>
           <CountdownTimer />
-        </TitleContainer>
+        </TitleContainer> */}
         <Sponsors>
           <img src={carnLogo} style={{ maxWidth: "200px", margin: "auto" }} />
           <span>x</span>

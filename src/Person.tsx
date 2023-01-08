@@ -25,7 +25,7 @@ const PersonContainer = styled.div`
   div {
     background-color: white;
     width: 100%;
-    color: black;
+    color: #334b49;
     font-family: "Inspiration";
   }
 `;
