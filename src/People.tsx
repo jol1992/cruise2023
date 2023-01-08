@@ -39,14 +39,13 @@ export const People = () => {
     { name: "ReRe", image: rere },
     { name: "Maurece", image: maurece },
     { name: "JaColbi", image: jacolbi },
-    { name: "Andrew", image: andrew },
+
     { name: "Nell", image: background },
     { name: "Wilma", image: wilma },
     { name: "Monty", image: monty },
     { name: "Lexia", image: lexia },
     { name: "Amari", image: amari },
     { name: "Bianca", image: bianca },
-    { name: "Nicole", image: nicole },
   ];
   return (
     <PeopleContainer>

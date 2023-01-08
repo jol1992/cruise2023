@@ -24,6 +24,7 @@ const AppContainer = styled.div`
   flex-direction: column;
   overflow-y: auto;
   overflow-x: hidden;
+  color: white;
 `;
 
 const StaringContainer = styled.div`

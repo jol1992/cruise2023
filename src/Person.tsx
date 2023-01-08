@@ -25,6 +25,8 @@ const PersonContainer = styled.div`
   div {
     background-color: white;
     width: 100%;
+    color: black;
+    font-family: "Inspiration";
   }
 `;
 const useOnScreen = (): [React.MutableRefObject<null>, boolean] => {
@@ -66,9 +68,7 @@ export const Person: React.FC<PersonProps> = ({ name, image }) => {
       className={`fade-in-section ${beenSeen ? "is-visible" : ""}`}
     >
       <img src={image} />
-      <div>
-        <AlternatingColorText text={name} />
-      </div>
+      <div>{name}</div>
     </PersonContainer>
   );
 };

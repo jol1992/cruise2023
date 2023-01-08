@@ -28,7 +28,7 @@ const FunContainer = styled.div`
   div {
     flex: 1;
     // font-size: 4em;
-    color: #528070;
+    color: white;
   }
   iframe {
     aspect-ratio: 16/9;
@@ -44,7 +44,7 @@ const FunContainer = styled.div`
 const Row = styled.div`
   display: flex;
   width: 100%;
-  color: #528070;
+  color: white;
   gap: 2rem;
   font-size: 1rem;
   font-weight: 600;

@@ -59,12 +59,9 @@ const GetReadyContainer = styled.div`
   justify-content: center;
   align-items: center;
   font-size: 23.5vw;
-  font-weight: 900;
-  color: #fff;
-  color: #528070;
+  color: black;
   text-align: center;
-  -webkit-text-stroke-color: white;
-  -webkit-text-stroke-width: 3px;
+  font-family: "Inspiration";
 `;
 
 export const LoopingVideo = () => {
@@ -110,8 +107,10 @@ export const LoopingVideo = () => {
         </>
 
         <GetReadyContainer>
-          GET
-          <br /> READY
+          <div style={{ position: "absolute", top: "40px" }}>
+            Carnival Valor
+            <br /> 2023
+          </div>
         </GetReadyContainer>
       </div>
     </VideoContainer>
