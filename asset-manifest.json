@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/cruise2023/static/css/main.9e3b6650.css",
-    "main.js": "/cruise2023/static/js/main.d54a9611.js",
+    "main.js": "/cruise2023/static/js/main.84753cba.js",
     "static/js/787.32c50ec3.chunk.js": "/cruise2023/static/js/787.32c50ec3.chunk.js",
     "static/media/bianca.jpg": "/cruise2023/static/media/bianca.550871e9a6d33a52a69f.jpg",
+    "static/media/Nell.jpg": "/cruise2023/static/media/Nell.b1c9ef5847f0adc59242.jpg",
     "static/media/Rere.jpg": "/cruise2023/static/media/Rere.a910f6c2d9e8a40690c5.jpg",
     "static/media/paradise.jpg": "/cruise2023/static/media/paradise.e8a38af3291ec0bd365a.jpg",
     "static/media/justin.jpg": "/cruise2023/static/media/justin.e7cacf8a2a6d022755ca.jpg",
@@ -22,11 +23,11 @@
     "static/media/wave.svg": "/cruise2023/static/media/wave.acd72668e4fdb0cc9a2a35db08a4eb82.svg",
     "index.html": "/cruise2023/index.html",
     "main.9e3b6650.css.map": "/cruise2023/static/css/main.9e3b6650.css.map",
-    "main.d54a9611.js.map": "/cruise2023/static/js/main.d54a9611.js.map",
+    "main.84753cba.js.map": "/cruise2023/static/js/main.84753cba.js.map",
     "787.32c50ec3.chunk.js.map": "/cruise2023/static/js/787.32c50ec3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9e3b6650.css",
-    "static/js/main.d54a9611.js"
+    "static/js/main.84753cba.js"
   ]
 }
