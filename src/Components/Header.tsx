@@ -5,6 +5,7 @@ import { AlternatingColorText } from "../Header/Header";
 import carnLogo from "../images/carnival-logo.png";
 import cat from "../images/cat.png";
 import jamvisions from "../images/jamvisions.svg";
+import logo from "../images/logo.svg";
 
 export const HeaderText = styled.div<{ size?: string; mt?: string }>`
   font-size: clamp(
@@ -75,18 +76,18 @@ const Sponsors = styled.span`
   }
 `;
 
-const Logo = styled.div`
-  margin-left: auto;
-  display: flex;
-  justify-content: flex-end;
-  max-width: 250px;
-  right: 0;
-  position: absolute;
-  bottom: 0;
-  img {
-    width: 100%;
-  }
-`;
+// const Logo = styled.div`
+//   margin-left: auto;
+//   display: flex;
+//   justify-content: flex-end;
+//   max-width: 250px;
+//   right: 0;
+//   position: absolute;
+//   bottom: 0;
+//   img {
+//     width: 100%;
+//   }
+// `;
 
 export const Header = () => {
   return (
@@ -113,12 +114,6 @@ export const Header = () => {
           <>June 8, 2023</>
           <CountdownTimer />
         </TitleContainer> */}
-        <Sponsors>
-          <img src={carnLogo} style={{ maxWidth: "200px", margin: "auto" }} />
-          <span>x</span>
-
-          <img src={jamvisions} style={{ maxWidth: "100px" }} />
-        </Sponsors>
       </HeaderContent>
       {/* 
       <Logo>

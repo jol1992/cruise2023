@@ -14,6 +14,7 @@ import jacolbi from "./images/Jacolbi.jpg";
 import amari from "./images/Amari.jpg";
 import lexia from "./images/lexia.jpg";
 import monty from "./images/monty.jpg";
+import nell from "./images/Nell.jpg";
 
 import styled from "styled-components";
 
@@ -24,9 +25,10 @@ export const People = () => {
     flex-wrap: wrap;
     justify-content: center;
     margin-left: 40px;
-    margin: 2rem 8rem;
+    margin: auto;
     padding: 1em;
     align-self: center;
+    max-width: 1339px;
     @media (max-width: 768px) {
       margin: 2rem 0;
       padding: 0;
@@ -40,7 +42,7 @@ export const People = () => {
     { name: "Maurece", image: maurece },
     { name: "JaColbi", image: jacolbi },
 
-    { name: "Nell", image: background },
+    { name: "Nell", image: nell },
     { name: "Wilma", image: wilma },
     { name: "Monty", image: monty },
     { name: "Lexia", image: lexia },
