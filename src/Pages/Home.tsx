@@ -9,7 +9,6 @@ export const Home = () => {
       <HeroContainer />
       <StarringContainer />
       <VideoTipsSection />
-      <Footer />
     </>
   );
 };

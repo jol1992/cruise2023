@@ -90,7 +90,7 @@ const SectionBody = styled.div`
 `;
 
 export const VideoTipsSection = () => {
-  const moniquesVideo = "https://www.youtube.com/embed/vC4QkkkQuxQ?control=0";
+  const moniquesVideo = "https://www.youtube.com/embed/b3a9j3usCEk?control=0";
   const lexiasVideo = "https://www.youtube.com/embed/Ae0sDdVVNVo";
   const justinsVideo = "https://www.youtube.com/embed/KIeytFLhcTY";
   const gloriasVideo = "https://www.youtube.com/embed/73h_ClDN9bg";
@@ -99,7 +99,7 @@ export const VideoTipsSection = () => {
 
   return (
     <>
-      <img src={wave} style={{ zIndex: 1 }} />
+      <img src={wave} style={{ zIndex: 1, backgroundColor: "white" }} />
       <VideoTipsContainer>
         <SectionHeader>
           <HeaderText size="6" style={{ textAlign: "center" }}>

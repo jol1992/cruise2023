@@ -28,7 +28,7 @@ export const People = () => {
     margin: auto;
     padding: 1em;
     align-self: center;
-    max-width: 1339px;
+    max-width: 1200px;
     @media (max-width: 768px) {
       margin: 2rem 0;
       padding: 0;

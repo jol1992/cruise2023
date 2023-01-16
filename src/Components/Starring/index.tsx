@@ -8,6 +8,7 @@ const StaringContainer = styled.div`
   display: inline-block;
   font-family: "TikiTropicBold";
   color: white;
+  background-color: white;
 `;
 
 const Header = styled.div`
