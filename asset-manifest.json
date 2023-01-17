@@ -1,16 +1,18 @@
 {
   "files": {
     "main.css": "/cruise2023/static/css/main.9e3b6650.css",
-    "main.js": "/cruise2023/static/js/main.e8ce1d1c.js",
+    "main.js": "/cruise2023/static/js/main.3c2c1f63.js",
     "static/js/787.32c50ec3.chunk.js": "/cruise2023/static/js/787.32c50ec3.chunk.js",
     "static/media/bianca.jpg": "/cruise2023/static/media/bianca.550871e9a6d33a52a69f.jpg",
     "static/media/neworleans.jpg": "/cruise2023/static/media/neworleans.7afd4b61dc72f33ee29c.jpg",
     "static/media/Nell.jpg": "/cruise2023/static/media/Nell.b1c9ef5847f0adc59242.jpg",
+    "static/media/ship.jpg": "/cruise2023/static/media/ship.6fc731f8117949abcd4d.jpg",
     "static/media/Rere.jpg": "/cruise2023/static/media/Rere.a910f6c2d9e8a40690c5.jpg",
     "static/media/paradise.jpg": "/cruise2023/static/media/paradise.e8a38af3291ec0bd365a.jpg",
     "static/media/carnival-party2.jpg": "/cruise2023/static/media/carnival-party2.52e30f814f23069b9b45.jpg",
     "static/media/mexico1.jpg": "/cruise2023/static/media/mexico1.38b8532db7ef23ed3015.jpg",
     "static/media/justin.jpg": "/cruise2023/static/media/justin.e7cacf8a2a6d022755ca.jpg",
+    "static/media/CarnivalBoat.jpg": "/cruise2023/static/media/CarnivalBoat.f53cc791731ee156305a.jpg",
     "static/media/monique.jpg": "/cruise2023/static/media/monique.c09341f8cb6dfdb5ccf6.jpg",
     "static/media/maurece.jpg": "/cruise2023/static/media/maurece.7875235e582d47da82ab.jpg",
     "static/media/TikiTropicBold-5zZZ.ttf": "/cruise2023/static/media/TikiTropicBold-5zZZ.7e7d960d939cf3b1bb42.ttf",
@@ -25,11 +27,11 @@
     "static/media/wave.svg": "/cruise2023/static/media/wave.acd72668e4fdb0cc9a2a35db08a4eb82.svg",
     "index.html": "/cruise2023/index.html",
     "main.9e3b6650.css.map": "/cruise2023/static/css/main.9e3b6650.css.map",
-    "main.e8ce1d1c.js.map": "/cruise2023/static/js/main.e8ce1d1c.js.map",
+    "main.3c2c1f63.js.map": "/cruise2023/static/js/main.3c2c1f63.js.map",
     "787.32c50ec3.chunk.js.map": "/cruise2023/static/js/787.32c50ec3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9e3b6650.css",
-    "static/js/main.e8ce1d1c.js"
+    "static/js/main.3c2c1f63.js"
   ]
 }
