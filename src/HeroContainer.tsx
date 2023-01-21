@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import styled from "styled-components";
 import paradise from "./images/paradise.jpg";
 import carnLogo from "./images/carnival-logo.png";
@@ -73,6 +73,10 @@ const Title = styled.div`
   position: relative;
   z-index: 1;
   font-family: "Inspiration";
+  color: white;
+  font-weight: 900;
+  background-color: #a9a9a936;
+  // padding: 10px;
   #subHeading {
     position: relative;
     top: -20px;
@@ -98,6 +102,8 @@ const HeroFooter = styled.div`
 export const HeroContainer = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 720);
 
+  const ref = useRef({} as HTMLDivElement);
+
   const handleResize = () => {
     setIsMobile(window.innerWidth < 395);
   };
@@ -106,8 +112,13 @@ export const HeroContainer = () => {
     window.addEventListener("resize", handleResize);
   });
 
+  // useEffect(() => {
+  //   // ref.current.scrollIntoView();
+  //   window.scrollTo(0, 0);
+  // }, []);
+
   return (
-    <StyledHeroContainer>
+    <StyledHeroContainer ref={ref}>
       <HeroContent>
         <HeroBody>
           <HeroHeader>

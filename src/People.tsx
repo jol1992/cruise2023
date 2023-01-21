@@ -1,20 +1,20 @@
 import React from "react";
 import { Person, PersonProps } from "./Person";
 import background from "./images/background.png";
-import maurece from "./images/maurece.jpg";
-import andrew from "./images/andrew.jpg";
-import monique from "./images/monique.jpg";
-import nicole from "./images/Nicole.jpg";
-import bianca from "./images/bianca.jpg";
-import rere from "./images/Rere.jpg";
-import wilma from "./images/wilma.jpg";
-import gloria from "./images/Gloria.jpg";
-import justin from "./images/justin.jpg";
-import jacolbi from "./images/Jacolbi.jpg";
-import amari from "./images/Amari.jpg";
-import lexia from "./images/lexia.jpg";
-import monty from "./images/monty.jpg";
-import nell from "./images/Nell.jpg";
+import maurece from "./images/people/maurece.jpg";
+import andrew from "./images/people/andrew.jpg";
+import monique from "./images/people/monique.jpg";
+import nicole from "./images/people/Nicole.jpg";
+import bianca from "./images/people/bianca.jpg";
+import rere from "./images/people/Rere.jpg";
+import wilma from "./images/people/wilma.jpg";
+import gloria from "./images/people/Gloria.jpg";
+import justin from "./images/people/justin.jpg";
+import jacolbi from "./images/people/Jacolbi.jpg";
+import amari from "./images/people/Amari.jpg";
+import lexia from "./images/people/lexia.jpg";
+import monty from "./images/people/monty.jpg";
+import nell from "./images/people/Nell.jpg";
 
 import styled from "styled-components";
 

@@ -39,7 +39,7 @@ export const VideoTips: FC<{ video: string; image: string; name: string }> = ({
       </Title>
       <Video>
         <iframe
-          style={{ border: "solid white 5px" }}
+          style={{ border: "solid #334b49 5px", borderRadius: "10px" }}
           src={video}
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

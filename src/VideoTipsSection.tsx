@@ -2,11 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import { VideoTips } from "./Components/VideoTips";
 import cat from "./images/cat.png";
-import lexia from "./images/lexia.jpg";
-import monique from "./images/monique.jpg";
-import justin from "./images/justin.jpg";
+import lexia from "./images/people/lexia.jpg";
+import monique from "./images/people/monique.jpg";
+import justin from "./images/people/justin.jpg";
 import wave from "./images/wave.svg";
-import gloria from "./images/Gloria.jpg";
+import gloria from "./images/people/Gloria.jpg";
 import { AlternatingColorText } from "./Header/Header";
 import { HeaderText } from "./Components/Header";
 
@@ -26,8 +26,7 @@ const MainVideoContianer = styled.div`
     }
   }
   div {
-    flex: 1;
-    // font-size: 4em;
+    flex: 1;s
     color: white;
   }
   iframe {
@@ -43,15 +42,16 @@ const VideoTipsContainer = styled.div`
   background-color: #0da49bff;
   z-index: 1;
 `;
-const Row = styled.div`
+const Row = styled.div<{ mb?: string }>`
   display: flex;
   width: 100%;
   color: white;
   gap: 4rem;
-  font-size: 1rem;
   font-weight: 600;
   @media (max-width: 768px) {
     flex-direction: column;
+    gap: 4rem;
+    margin-bottom: ${(props) => (props.mb ? `${props.mb}rem` : "0")};
   }
 
   #videoDiv {
@@ -64,10 +64,10 @@ const Row = styled.div`
 `;
 
 const NoProb = styled.div`
-  color: white;
-  -webkit-text-stroke-color: #9dc6e7ff;
+  color: #334b49;
+  -webkit-text-stroke-color: white;
   @media (max-width: 768px) {
-    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-width: 1px;
   }
 `;
 
@@ -121,14 +121,16 @@ export const VideoTipsSection = () => {
               </div>
             </div>
           </MainVideoContianer>
-          <Row>
-            <VideoTips image={monique} name="Monique" video={moniquesVideo} />
-            <VideoTips image={lexia} name="Lexia" video={lexiasVideo} />
-          </Row>
-          <Row>
-            <VideoTips image={gloria} name="Gloria" video={gloriasVideo} />
-            <VideoTips image={justin} name="Justin" video={justinsVideo} />
-          </Row>
+          <div>
+            <Row mb="4">
+              <VideoTips image={monique} name="Monique" video={moniquesVideo} />
+              <VideoTips image={lexia} name="Lexia" video={lexiasVideo} />
+            </Row>
+            <Row>
+              <VideoTips image={gloria} name="Gloria" video={gloriasVideo} />
+              <VideoTips image={justin} name="Justin" video={justinsVideo} />
+            </Row>
+          </div>
         </SectionBody>
       </VideoTipsContainer>
     </>

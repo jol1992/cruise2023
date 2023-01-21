@@ -6,13 +6,13 @@ import star from "../../images/star.png";
 
 const StaringContainer = styled.div`
   display: inline-block;
-  font-family: "TikiTropicBold";
   color: white;
   background-color: white;
 `;
 
 const Header = styled.div`
   margin-left: calc(2rem + 30px);
+  font-family: "TikiTropicBold";
   margin-top: 30px;
   margin-bottom: 2rem;
   font-size: 2rem;
@@ -40,6 +40,19 @@ const Header = styled.div`
   }
 `;
 
+const MissingButton = styled.div`
+  color: white;
+  background-color: #334b49e0;
+  margin: auto;
+  padding: 1rem 3rem;
+  border-radius: 10px;
+  background-color: #51beb7;
+  box-shadow: 7px 5px 7px #00000073;
+  &:hover {
+    cursor: pointer;
+  }
+`;
+
 export const StarringContainer = () => {
   return (
     <StaringContainer>
@@ -49,6 +62,18 @@ export const StarringContainer = () => {
         <img src={star} />
       </Header>
       <People />
+      <div style={{ display: "flex", margin: "3rem 0" }}>
+        <MissingButton
+          onClick={() =>
+            window.open(
+              `https://www.carnival.com/booking/rooms-and-guests?embkCode=MSY&itinCode=WCD&durDays=4&shipCode=VA&subRegionCode=CW&sailDate=06082023&sailingID=96338&numGuests=2&isMilitary=N&isOver55=N&isPastGuest=N&stateCode=&evsel=&locality=1&currency=USD`
+            )
+          }
+        >
+          <div>Missing?</div>
+          <strong>JOIN US</strong>
+        </MissingButton>
+      </div>
     </StaringContainer>
   );
 };

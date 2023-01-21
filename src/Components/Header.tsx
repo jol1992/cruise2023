@@ -13,11 +13,12 @@ export const HeaderText = styled.div<{ size?: string; mt?: string }>`
     1.2rem + 10vw,
     ${({ size }) => (size ? `${size}rem` : "7rem")}
   );
+
   @media (max-width: 768px) {
     text-align: center;
   }
 
-  color: #334b49;
+  // color: #334b49;
   font-family: TikiTropicBold;
 `;
 

@@ -4,13 +4,16 @@ import "./index.css";
 import "./assets/TikiTropicBold-5zZZ.ttf";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import { AppStateProvider } from "./Providers/AppStateProvider";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <AppStateProvider>
+      <App />
+    </AppStateProvider>
   </React.StrictMode>
 );
 

@@ -1,24 +1,30 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef, useContext } from "react";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 import { MenuButton } from "./MenuButton";
+import { AppStateContext } from "../Providers/AppStateProvider";
 
 const NavBarContainer = styled.div`
   position: sticky;
-  background-color: white;
-  color: #334b49;
+  background-color: #334b49;
+  color: white;
   top: 0;
   z-index: 2;
+  box-shadow: 0px 5px 7px 0px black;
   ul {
     display: flex;
     list-style: none;
     gap: 4rem;
     margin-left: auto;
     justify-content: center;
-    padding: 1rem;
+    padding: 0.3rem;
   }
   li {
     decoration: none;
+    padding: 1rem;
+    &:hover {
+      color: #ffe495;
+    }
   }
   @media (max-width: 768px) {
     ul {
@@ -31,6 +37,8 @@ const NavBarContainer = styled.div`
 export const NavBar = () => {
   const nav = useNavigate();
 
+  const { setPath } = useContext(AppStateContext);
+
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -41,6 +49,7 @@ export const NavBar = () => {
   });
 
   const handleClick = (path: string) => {
+    setPath(path);
     setIsOpen(false);
     nav(path);
   };
@@ -51,17 +60,19 @@ export const NavBar = () => {
       {isOpen || !isMobile ? (
         <ul>
           <li onClick={() => handleClick("/cruise2023")}>Home</li>
-          <li onClick={() => handleClick("/itenerary")}>Itenerary</li>
+          <li onClick={() => handleClick("/itenerary")}>Itinerary</li>
           <li onClick={() => handleClick("/checklist")}>Checklist</li>
-          <li onClick={() => handleClick("/rules")}>Rules</li>
+          <li onClick={() => handleClick("/merch")}>Merch</li>
           <li>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.carnival.com/booking/rooms-and-guests?embkCode=MSY&itinCode=WCD&durDays=4&shipCode=VA&subRegionCode=CW&sailDate=06082023&sailingID=96338&numGuests=2&isMilitary=N&isOver55=N&isPastGuest=N&stateCode=&evsel=&locality=1&currency=USD"
+            <button
+              onClick={() =>
+                window.open(
+                  `https://www.carnival.com/booking/rooms-and-guests?embkCode=MSY&itinCode=WCD&durDays=4&shipCode=VA&subRegionCode=CW&sailDate=06082023&sailingID=96338&numGuests=2&isMilitary=N&isOver55=N&isPastGuest=N&stateCode=&evsel=&locality=1&currency=USD`
+                )
+              }
             >
               Join Us / Book Now!
-            </a>
+            </button>
           </li>
         </ul>
       ) : (

@@ -3,7 +3,7 @@ import styled from "styled-components";
 const MenuBar = styled.div`
   height: 4px;
   width: 25px;
-  background-color: #334b49;
+  background-color: white;
   margin-bottom: 5px;
 `;
 export const MenuButton: React.FC<{
@@ -18,7 +18,7 @@ export const MenuButton: React.FC<{
     <div
       style={{
         position: "absolute",
-        top: "2rem",
+        top: "1.5rem",
         // marginTop: "5px",
         marginLeft: "2rem",
       }}
