@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cruise2023/static/css/main.9e3b6650.css",
-    "main.js": "/cruise2023/static/js/main.b8c82c42.js",
+    "main.js": "/cruise2023/static/js/main.d8f25626.js",
     "static/js/787.32c50ec3.chunk.js": "/cruise2023/static/js/787.32c50ec3.chunk.js",
     "static/media/bianca.jpg": "/cruise2023/static/media/bianca.550871e9a6d33a52a69f.jpg",
     "static/media/monty.jpg": "/cruise2023/static/media/monty.56cf6c6d861b334e22a3.jpg",
@@ -36,11 +36,11 @@
     "static/media/wave.svg": "/cruise2023/static/media/wave.acd72668e4fdb0cc9a2a35db08a4eb82.svg",
     "index.html": "/cruise2023/index.html",
     "main.9e3b6650.css.map": "/cruise2023/static/css/main.9e3b6650.css.map",
-    "main.b8c82c42.js.map": "/cruise2023/static/js/main.b8c82c42.js.map",
+    "main.d8f25626.js.map": "/cruise2023/static/js/main.d8f25626.js.map",
     "787.32c50ec3.chunk.js.map": "/cruise2023/static/js/787.32c50ec3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9e3b6650.css",
-    "static/js/main.b8c82c42.js"
+    "static/js/main.d8f25626.js"
   ]
 }
