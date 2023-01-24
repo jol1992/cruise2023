@@ -21,15 +21,31 @@ const NavBarContainer = styled.div`
   }
   li {
     decoration: none;
-    padding: 1rem;
+
     &:hover {
       color: #ffe495;
+      cursor: pointer;
+      font-weight: 500;
+    }
+
+    #joinUs {
+      background-color: white;
+      color: #334b49;
     }
   }
+
   @media (max-width: 768px) {
     ul {
       flex-direction: column;
       align-items: center;
+    }
+    #joinUs {
+      background-color: white;
+      color: #334b49;
+      width: 100%;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
     }
   }
 `;
@@ -63,16 +79,15 @@ export const NavBar = () => {
           <li onClick={() => handleClick("/itenerary")}>Itinerary</li>
           <li onClick={() => handleClick("/checklist")}>Checklist</li>
           <li onClick={() => handleClick("/merch")}>Merch</li>
-          <li>
-            <button
-              onClick={() =>
-                window.open(
-                  `https://www.carnival.com/booking/rooms-and-guests?embkCode=MSY&itinCode=WCD&durDays=4&shipCode=VA&subRegionCode=CW&sailDate=06082023&sailingID=96338&numGuests=2&isMilitary=N&isOver55=N&isPastGuest=N&stateCode=&evsel=&locality=1&currency=USD`
-                )
-              }
-            >
-              Join Us / Book Now!
-            </button>
+          <li
+            id="joinUs"
+            onClick={() =>
+              window.open(
+                `https://www.carnival.com/booking/rooms-and-guests?embkCode=MSY&itinCode=WCD&durDays=4&shipCode=VA&subRegionCode=CW&sailDate=06082023&sailingID=96338&numGuests=2&isMilitary=N&isOver55=N&isPastGuest=N&stateCode=&evsel=&locality=1&currency=USD`
+              )
+            }
+          >
+            Join Us / Book Now!
           </li>
         </ul>
       ) : (

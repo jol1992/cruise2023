@@ -12,5 +12,5 @@ export const MovingImage: FC<{ images: string[] }> = ({ images }) => {
     return () => clearInterval(interval);
   }, [currentImageindex]);
 
-  return <img src={images[currentImageindex]} />;
+  return <img style={{ maxWidth: "100%" }} src={images[currentImageindex]} />;
 };

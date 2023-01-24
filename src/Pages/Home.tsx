@@ -8,15 +8,19 @@ import styled from "styled-components";
 import { useNavigate } from "react-router";
 import { useContext, useEffect, useRef } from "react";
 import { AppStateContext } from "../Providers/AppStateProvider";
+import map from "../assets/icons/png/map.png";
 
 const IteneraryButton = styled.div`
   color: white;
   background-color: #334b49e0;
   margin: auto;
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
   border-radius: 10px;
   background-color: #51beb7;
   box-shadow: 7px 5px 7px #00000073;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   &:hover {
     cursor: pointer;
   }
@@ -47,7 +51,11 @@ export const Home = () => {
         <div style={{ marginBottom: "4rem" }}>LETS GO!</div>
         <div style={{ display: "flex" }}>
           <IteneraryButton onClick={handleClick}>
-            <strong>View Itenerary</strong>
+            <img src={map} style={{ maxWidth: "2rem", maxHeight: "2rem" }} />
+            <strong>
+              View <br />
+              Itenerary
+            </strong>
           </IteneraryButton>
         </div>
       </div>

@@ -22,8 +22,39 @@ import lexia from "../images/inMexico/lexia_port.jpg";
 import port from "../images/inMexico/mexico_port.jpg";
 import chocolate from "../images/inMexico/mexico_choclate.jpg";
 import mexican from "../images/inMexico/mexican-man.jpg";
+
+//icons
+import food from "../assets/icons/png/restaurant.png";
+import basketball from "../assets/icons/png/basketball.png";
+import cheers from "../assets/icons/png/cheers.png";
+import gym from "../assets/icons/png/gym.png";
+import laugh from "../assets/icons/png/happy.png";
+
+import mircophone from "../assets/icons/png/microphone.png";
+import sauna from "../assets/icons/png/sauna.png";
+import slots from "../assets/icons/png/slots.png";
+import theatre from "../assets/icons/png/theatre.png";
+import dance from "../assets/icons/png/dance.png";
+import document from "../assets/icons/png/document.png";
+
 import { useContext, useEffect, useRef, useState } from "react";
 import { AppStateContext } from "../Providers/AppStateProvider";
+
+import wave from "../images/wave.svg";
+import { Card } from "../Components/Card";
+
+const cards = [
+  { description: "Unlimited Food", image: food },
+  { description: "Clubs", image: dance },
+  { description: "Casino", image: slots },
+  { description: "Basketball", image: basketball },
+  { description: "Sport Bars", image: cheers },
+  { description: "Production Plays", image: theatre },
+  { description: "Comedy Shows", image: laugh },
+  { description: "Karaoke", image: mircophone },
+  { description: "Spa", image: sauna },
+  { description: "Gym", image: gym },
+];
 
 const IteneraryContainter = styled.div`
   padding: 4rem;
@@ -92,8 +123,10 @@ const ChecklistButton = styled.div`
   padding: 2rem 3rem;
   margin: 0;
   border-radius: 10px;
-  box-shadow: 4px 8px 5px 0px #ffffff73;
-
+  box-shadow: 7px 9px 8px 0px #3e26268a;
+  aligin-items: center;
+  display: flex;
+  gap: 10px;
   &:hover {
     cursor: pointer;
   }
@@ -136,6 +169,7 @@ export const Itenerary = () => {
           </HeaderText>
         </WeGotcha>
       </PageHeader>
+
       <hr />
 
       <IteneraryContainter>
@@ -163,7 +197,16 @@ export const Itenerary = () => {
                     }}
                   >
                     <ChecklistButton onClick={handleClick}>
-                      <strong>View checklist</strong>
+                      <img
+                        src={document}
+                        style={{ maxWidth: "32px", maxHeight: "32px" }}
+                      />
+
+                      <div style={{ alignSelf: "center", margin: 0 }}>
+                        <strong>
+                          View <br /> checklist
+                        </strong>
+                      </div>
                     </ChecklistButton>
                   </div>
                 </div>
@@ -197,7 +240,7 @@ export const Itenerary = () => {
             }}
           >
             <div style={{ textDecoration: "underline", marginBottom: "4rem" }}>
-              <HeaderText size="3">Parking Location:</HeaderText>
+              <HeaderText size="3">Parking Information:</HeaderText>
             </div>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13829.883325644058!2d-90.061357!3d29.9371329!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x593386ebe000c185!2sPort%20of%20New%20Orleans!5e0!3m2!1sen!2sus!4v1673841081591!5m2!1sen!2sus"
@@ -217,23 +260,6 @@ export const Itenerary = () => {
             <div
               style={{ display: "flex", gap: "3rem", flexWrap: "wrap-reverse" }}
             >
-              <ul>
-                {/* <div style={{ overflowWrap: "break-word", marginBottom: "2rem" }}>
-                It's impossible to be bored on Carnival Valor, here's a taste of
-                what's available
-              </div> */}
-                <li>Unlimited Food</li>
-                <li>Clubs</li>
-                <li>Casino</li>
-                <li>Basketball</li>
-                <li>Sport Bars</li>
-                <li>Production Plays</li>
-                <li>Comedy Shows</li>
-                <li>Karaoke</li>
-                <li>Spa</li>
-                <li>Gym</li>
-                <li>... alot more!</li>
-              </ul>
               <div style={{ marginLeft: "auto" }}>
                 <MovingImage
                   images={[
@@ -247,6 +273,19 @@ export const Itenerary = () => {
                   ]}
                 />
               </div>
+            </div>
+            <div
+              style={{
+                display: "flex",
+                flexWrap: "wrap",
+                gap: "2rem",
+                margin: "4rem 2rem",
+                justifyItems: "center",
+              }}
+            >
+              {cards.map(({ image, description }) => {
+                return <Card icon={image} decription={description} />;
+              })}
             </div>
           </Section>
           <hr />
