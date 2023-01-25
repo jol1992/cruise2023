@@ -10,9 +10,9 @@ interface Product {
 
 const amazonItems: Product[] = [
   {
-    link: "https://www.etsy.com/listing/704502189/cruise-shirts-i-love-it-when-were?variation1=1083129048&favorite_listing_id=704502189",
+    link: "https://www.etsy.com/listing/1171986941/i-love-it-when-were-cruisin-together",
     imageLink:
-      "https://i.etsystatic.com/7271519/r/il/3b8ba8/1869932140/il_794xN.1869932140_qmtn.jpg",
+      "https://i.etsystatic.com/28657327/r/il/944878/3641971908/il_794xN.3641971908_pdxr.jpg",
     name: "Tshirt",
   },
   {
@@ -30,17 +30,17 @@ const amazonItems: Product[] = [
     link: "https://amzn.to/3GOE1q6",
     imageLink:
       "https://m.media-amazon.com/images/I/81vy-TP+cfL._AC_SL1500_.jpg",
-    name: "Lanyard and Luggage tags set",
+    name: "Lanyard and Luggage Tags Set",
   },
   {
     link: "https://amzn.to/3ITqxvU",
     imageLink: "https://m.media-amazon.com/images/I/61Jky0CCIQL._AC_SX522_.jpg",
-    name: "Neck Fan- Because it will be hot",
+    name: "Neck Fan",
   },
   {
     link: "https://amzn.to/3Xj5MOM",
     imageLink: "https://m.media-amazon.com/images/I/614ZWHzOcQL._AC_SX522_.jpg",
-    name: "Neck Fan- Because it will be hot",
+    name: "Neck Fan",
   },
   {
     link: "https://amzn.to/3QI7WoG",
@@ -77,6 +77,12 @@ const amazonItems: Product[] = [
       "https://m.media-amazon.com/images/I/712EgC798kL._AC_SL1500_.jpg",
     name: "Selfie stick",
   },
+  {
+    link: "https://amzn.to/3Jbj3EG",
+    imageLink:
+      "https://m.media-amazon.com/images/I/71mc4QMGy9L._AC_SL1500_.jpg",
+    name: "Luggage",
+  },
 ];
 
 const MerchContainer = styled.div`
@@ -90,6 +96,9 @@ const ItemsWrapper = styled.div`
   margin: auto;
   justify-content: center;
   margin-bottom: 2rem;
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 const Item = styled.div`

@@ -181,14 +181,10 @@ export const Checklist = () => {
           <ChecklistItem label={"Neck fan (It's gonna be HOT!)"} />
           <ChecklistItem label={"Soda - One case of 12 cans per guest"} />
           <ChecklistItem label={"Wine - One 750ml bottle per adult"} />
+          <ChecklistItem label={"Cigerettes- You can smoke in the casino"} />
         </div>
         <br />
 
-        <div>
-          THEY HAVE CERTAIN AREAS ON THE BOAT TO SMOKE CIGARETTES/CIGARS...ex
-          (Casino)
-        </div>
-        <br />
         <h3 style={{ color: "#ffe495" }}>WHAT NOT TO BRING!</h3>
         <div
           style={{
@@ -207,7 +203,7 @@ export const Checklist = () => {
       <div style={{ backgroundColor: "#334b49", padding: "4rem 0 0 0" }}>
         <div style={{ padding: "0" }}>
           <HeaderText style={{ margin: "2rem" }}>
-            Need to buy some stuff?
+            Need to buy something?
           </HeaderText>
 
           <div
@@ -217,7 +213,7 @@ export const Checklist = () => {
           >
             <MovingImage
               images={[
-                "https://i.etsystatic.com/7271519/r/il/3b8ba8/1869932140/il_794xN.1869932140_qmtn.jpg",
+                "https://i.etsystatic.com/28657327/r/il/944878/3641971908/il_794xN.3641971908_pdxr.jpg",
                 "https://m.media-amazon.com/images/I/71WL-B4QdEL._AC_SL1500_.jpg",
                 "https://m.media-amazon.com/images/I/61Jky0CCIQL._AC_SX522_.jpg",
               ]}

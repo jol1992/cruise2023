@@ -119,8 +119,9 @@ const PageWrapper = styled.div`
 `;
 
 const ChecklistButton = styled.div`
-  background-color: #334b49;
-  padding: 2rem 3rem;
+  background-color: white;
+  color: #334b49;
+  padding: 1rem 3rem;
   margin: 0;
   border-radius: 10px;
   box-shadow: 7px 9px 8px 0px #3e26268a;
@@ -139,6 +140,7 @@ const TravelButton = styled.div`
   border-radius: 10px;
   background-color: #51beb7;
   box-shadow: 7px 5px 7px #00000073;
+
   &:hover {
     cursor: pointer;
   }
@@ -186,7 +188,7 @@ export const Itenerary = () => {
                 <div>1. Request time off work</div>
                 <div>2. Transportation to New Orleans</div>
                 <div>
-                  3. Make sure to have required documents.{" "}
+                  3. Make sure to have Required Documents{" "}
                   <div
                     style={{
                       display: "flex",
@@ -199,7 +201,12 @@ export const Itenerary = () => {
                     <ChecklistButton onClick={handleClick}>
                       <img
                         src={document}
-                        style={{ maxWidth: "32px", maxHeight: "32px" }}
+                        style={{
+                          maxWidth: "32px",
+                          maxHeight: "32px",
+                          border: "0",
+                          alignSelf: "center",
+                        }}
                       />
 
                       <div style={{ alignSelf: "center", margin: 0 }}>
@@ -328,7 +335,7 @@ export const Itenerary = () => {
               window.open("https://www.carnival.com/shore-excursions/cozumel");
             }}
           >
-            View excursions
+            View Excursions
           </TravelButton>
         </div>
       </div>

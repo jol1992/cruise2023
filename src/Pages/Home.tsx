@@ -1,12 +1,10 @@
-import { Footer } from "../Footer";
 import { HeroContainer } from "../HeroContainer";
 import { VideoTipsSection } from "../VideoTipsSection";
 import { StarringContainer } from "../Components/Starring";
 import { HeaderText } from "../Components/Header";
-import { Itenerary } from "./Iteneray";
 import styled from "styled-components";
 import { useNavigate } from "react-router";
-import { useContext, useEffect, useRef } from "react";
+import { useContext } from "react";
 import { AppStateContext } from "../Providers/AppStateProvider";
 import map from "../assets/icons/png/map.png";
 
@@ -54,7 +52,7 @@ export const Home = () => {
             <img src={map} style={{ maxWidth: "2rem", maxHeight: "2rem" }} />
             <strong>
               View <br />
-              Itenerary
+              Itinerary
             </strong>
           </IteneraryButton>
         </div>
