@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cruise2023/static/css/main.9e3b6650.css",
-    "main.js": "/cruise2023/static/js/main.be85adf1.js",
+    "main.js": "/cruise2023/static/js/main.52ac0f00.js",
     "static/js/787.32c50ec3.chunk.js": "/cruise2023/static/js/787.32c50ec3.chunk.js",
     "static/media/bianca.jpg": "/cruise2023/static/media/bianca.550871e9a6d33a52a69f.jpg",
     "static/media/SeaVideo.mp4": "/cruise2023/static/media/SeaVideo.46a5c69d12daf564cee6.mp4",
@@ -29,6 +29,7 @@
     "static/media/Gloria.jpg": "/cruise2023/static/media/Gloria.82ce407fe2a138b492c1.jpg",
     "static/media/carnival-logo.png": "/cruise2023/static/media/carnival-logo.9e5ff8e1ec5185ab10d1.png",
     "static/media/lexia.jpg": "/cruise2023/static/media/lexia.03736c79084a4bcf4c07.jpg",
+    "static/media/sampleLogo2.png": "/cruise2023/static/media/sampleLogo2.9575955a5dfbc47d5d99.png",
     "static/media/Amari.jpg": "/cruise2023/static/media/Amari.4808fa11f21ee03e339b.jpg",
     "static/media/wilma.jpg": "/cruise2023/static/media/wilma.4a1564631465ac05761f.jpg",
     "static/media/map.png": "/cruise2023/static/media/map.34589de5eb1aa78a5c68.png",
@@ -37,11 +38,11 @@
     "static/media/wave.svg": "/cruise2023/static/media/wave.acd72668e4fdb0cc9a2a35db08a4eb82.svg",
     "index.html": "/cruise2023/index.html",
     "main.9e3b6650.css.map": "/cruise2023/static/css/main.9e3b6650.css.map",
-    "main.be85adf1.js.map": "/cruise2023/static/js/main.be85adf1.js.map",
+    "main.52ac0f00.js.map": "/cruise2023/static/js/main.52ac0f00.js.map",
     "787.32c50ec3.chunk.js.map": "/cruise2023/static/js/787.32c50ec3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9e3b6650.css",
-    "static/js/main.be85adf1.js"
+    "static/js/main.52ac0f00.js"
   ]
 }
