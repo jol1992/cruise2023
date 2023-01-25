@@ -3,13 +3,11 @@ import styled from "styled-components";
 import paradise from "./images/paradise.jpg";
 import carnLogo from "./images/carnival-logo.png";
 import { TripInfoBlock } from "./Components/TripInfoBlock";
+import video from "./assets/videos/SeaVideo.mp4";
 
 const StyledHeroContainer = styled.div`
-  background-color: white;
   position: relative;
   background-attachment: fixed;
-  background: url(${paradise}) no-repeat center;
-  background-size: cover;
 
   iframe {
     width: 400vw;
@@ -31,6 +29,11 @@ const HeroBody = styled.div`
   font-size: 5rem;
   color: #334b49;
   text-align: center;
+  video {
+    position: relative;
+    left: 50%;
+    transform: translateX(-14%);
+  }
 `;
 const HeroContent = styled.div`
   display: inline-block;
@@ -74,8 +77,8 @@ const Title = styled.div`
   z-index: 1;
   font-family: "Inspiration";
   color: white;
-  font-weight: 900;
-  background-color: #a9a9a936;
+  font-weight: 400;
+
   // padding: 10px;
   #subHeading {
     position: relative;
@@ -121,6 +124,9 @@ export const HeroContainer = () => {
     <StyledHeroContainer ref={ref}>
       <HeroContent>
         <HeroBody>
+          <video autoPlay muted loop>
+            <source src={video} />
+          </video>
           <HeroHeader>
             <Title>
               <>Carnival Valor</>

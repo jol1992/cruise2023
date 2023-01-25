@@ -57,9 +57,9 @@ export const StarringContainer = () => {
   return (
     <StaringContainer>
       <Header>
-        <img src={star} />
+        {/* <img src={star} /> */}
         <div>Starring</div>
-        <img src={star} />
+        {/* <img src={star} /> */}
       </Header>
       <People />
       <div style={{ display: "flex", margin: "3rem 0" }}>

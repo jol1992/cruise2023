@@ -179,7 +179,7 @@ export const Checklist = () => {
           <ChecklistItem label={"Hat"} />
           <ChecklistItem label={"Sunglasses"} />
           <ChecklistItem label={"Neck fan (It's gonna be HOT!)"} />
-          <ChecklistItem label={"Soda - One case of 12 cans per guest"} />
+          <ChecklistItem label={"Soda - One case of 12 (CANS ONLY)"} />
           <ChecklistItem label={"Wine - One 750ml bottle per adult"} />
           <ChecklistItem label={"Cigerettes- You can smoke in the casino"} />
         </div>

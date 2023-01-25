@@ -6,6 +6,10 @@ const MenuBar = styled.div`
   background-color: white;
   margin-bottom: 5px;
 `;
+
+const Container = styled.div`
+  margin: auto 0;
+`;
 export const MenuButton: React.FC<{
   isOpen: boolean;
   setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
@@ -15,15 +19,7 @@ export const MenuButton: React.FC<{
   };
 
   return (
-    <div
-      style={{
-        position: "absolute",
-        top: "1.5rem",
-        // marginTop: "5px",
-        marginLeft: "2rem",
-      }}
-      onClick={handleClick}
-    >
+    <Container onClick={handleClick}>
       {!isOpen ? (
         <div>
           <MenuBar></MenuBar>
@@ -37,6 +33,6 @@ export const MenuButton: React.FC<{
           <MenuBar></MenuBar>
         </div>
       )}
-    </div>
+    </Container>
   );
 };

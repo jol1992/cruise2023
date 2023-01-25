@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 import { MenuButton } from "./MenuButton";
 import { AppStateContext } from "../Providers/AppStateProvider";
+import logo from "../images/sampleLogo2.png";
 
 const NavBarContainer = styled.div`
   position: sticky;
@@ -21,6 +22,9 @@ const NavBarContainer = styled.div`
   }
   li {
     decoration: none;
+    img {
+      max-width: 100px;
+    }
 
     &:hover {
       color: #ffe495;
@@ -72,7 +76,6 @@ export const NavBar = () => {
 
   return (
     <NavBarContainer>
-      {isMobile && <MenuButton isOpen={isOpen} setIsOpen={setIsOpen} />}
       {isOpen || !isMobile ? (
         <ul>
           <li onClick={() => handleClick("/cruise2023")}>Home</li>
@@ -91,8 +94,22 @@ export const NavBar = () => {
           </li>
         </ul>
       ) : (
-        <ul>
-          <li onClick={() => handleClick("/cruise2023")}>Cruise 2023</li>
+        <ul style={{ width: "100%", marginLeft: "1rem" }}>
+          <div
+            style={{
+              display: "flex",
+              width: "100%",
+              alignContent: "center",
+            }}
+          >
+            <MenuButton isOpen={isOpen} setIsOpen={setIsOpen} />
+            <li
+              onClick={() => handleClick("/cruise2023")}
+              style={{ margin: "auto" }}
+            >
+              <img src={logo} />
+            </li>
+          </div>
         </ul>
       )}
     </NavBarContainer>

@@ -45,8 +45,7 @@ export const Home = () => {
           padding: "4rem 0",
         }}
       >
-        <HeaderText>Enough Talk</HeaderText>
-        <div style={{ marginBottom: "4rem" }}>LETS GO!</div>
+        <HeaderText style={{ marginBottom: "2rem" }}>Let's Go</HeaderText>
         <div style={{ display: "flex" }}>
           <IteneraryButton onClick={handleClick}>
             <img src={map} style={{ maxWidth: "2rem", maxHeight: "2rem" }} />
